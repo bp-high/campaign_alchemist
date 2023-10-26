@@ -91,7 +91,7 @@ tab1, tab2, tab3 = st.tabs(["AI Post Generator(Short with Audio)", "AI Post Gene
 with tab1:
     st.header("Generate Posts for a product/feature/firm for social media")
     user_product_input = st.text_input("Enter the description of the product/feature/ firm you want to promote",
-                               """Campaign Analyst is my short app which helps creators create short and long social media posts alongiwith short audios and a custom qr code embedded in a beautiful image Currently it can generate content in some non-english languages like chinese, arabic and spanish we will support more in the future. In future we will add support for AI avatar videos and AI product placement generators""",
+                               """Campaign Alchemist is my short app which helps creators create short and long social media posts alongiwith short audios and a custom qr code embedded in a beautiful image Currently it can generate content in some non-english languages like chinese, arabic and spanish we will support more in the future. In future we will add support for AI avatar videos and AI product placement generators""",
                                        max_chars=600,
                                        key="input1")
 
@@ -207,7 +207,7 @@ with tab2:
     st.header("Generate Posts for a product/feature/firm for social media directly in multiple languages")
     st.info("Do note this a relatively slower option as it bulk calls all AI models to generate output in all supported languages", icon="ℹ️")
     user_product_input_bulk = st.text_input("Enter the description of the product/feature/ firm you want to promote",
-                                       """Campaign Analyst is my short app which helps creators create short and long social media posts alongiwith short audios and a custom qr code embedded in a beautiful image Currently it can generate content in some non-english languages like chinese, arabic and spanish we will support more in the future. In future we will add support for AI avatar videos and AI product placement generators""",
+                                       """Campaign Alchemist is my short app which helps creators create short and long social media posts alongiwith short audios and a custom qr code embedded in a beautiful image Currently it can generate content in some non-english languages like chinese, arabic and spanish we will support more in the future. In future we will add support for AI avatar videos and AI product placement generators""",
                                             max_chars=600,
                                             key="input2")
 
