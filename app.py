@@ -91,31 +91,7 @@ tab1, tab2, tab3 = st.tabs(["AI Post Generator(Short with Audio)", "AI Post Gene
 with tab1:
     st.header("Generate Posts for a product/feature/firm for social media")
     user_product_input = st.text_input("Enter the description of the product/feature/ firm you want to promote",
-                               """Copilot is here! Mindtickle has released a suite of generative AI features across its revenue productivity platform to help everyone in the revenue organization.
-
-Generating revenue doesn’t fall on one department, it’s a critical responsibility across go-to-market teams including sellers, enablement, customer success, operations, and management. Yet 72% of salespeople expect their team to miss annual quota in 2023 according to Salesforce.
-
-Recent generative AI technologies have the ability to make these teams more productive so they can focus on their high-value revenue-generating activities.
-
-That’s where Copilot comes in.
-
-Copilot helps revenue teams:
-
-    Discover data-driven insights faster
-    Create personalized experiences quickly
-    Execute revenue-generating interactions exceptionally
-    Uphold security and ethical standards with a secure generative AI platform
-
-This not only saves time for enablement professionals but also ensures that sales teams have access to up-to-date, engaging, and tailored content that resonates with their target audience.
-Discover data-driven insights faster
-
-Copilot gets you the answers you need to make data-based decisions, without reviewing lengthy calls or navigating dashboards and reporting pages.
-AI call navigator
-
-Get quick insights into every call fast
-
-Copilot can analyze any call in seconds and answer top-of-mind questions without having to sift through a transcript. Sellers can get a quick call summary, craft detailed follow-ups, and receive self-coaching tips on how to improve future customer and prospect interactions. Managers can prioritize reps to coach by call scores and quickly review underperforming calls to foster detailed coaching sessions.
-""")
+                               """Campaign Analyst' my short apps which helps creators create short and long social media posts alongiwith short audios and a custom qr code embedded in a beautiful image Currently it can generate content in some non-english languages like chinese, arabic and spanish we will support more in the future. In future we will add support for AI avatar videos and AI product placement generators""")
 
     if st.button("Generate Campaign Post in English"):
         with st.spinner(text="Using ClarifAI workflow to generate English Post and English Audio"):
@@ -229,30 +205,7 @@ with tab2:
     st.header("Generate Posts for a product/feature/firm for social media directly in multiple languages")
     st.info("Do note this a relatively slower option as it bulk calls all AI models to generate output in all supported languages", icon="ℹ️")
     user_product_input_bulk = st.text_input("Enter the description of the product/feature/ firm you want to promote",
-                                       """Copilot is here! Mindtickle has released a suite of generative AI features across its revenue productivity platform to help everyone in the revenue organization.
-    
-        Generating revenue doesn’t fall on one department, it’s a critical responsibility across go-to-market teams including sellers, enablement, customer success, operations, and management. Yet 72% of salespeople expect their team to miss annual quota in 2023 according to Salesforce.
-    
-        Recent generative AI technologies have the ability to make these teams more productive so they can focus on their high-value revenue-generating activities.
-    
-        That’s where Copilot comes in.
-    
-        Copilot helps revenue teams:
-    
-            Discover data-driven insights faster
-            Create personalized experiences quickly
-            Execute revenue-generating interactions exceptionally
-            Uphold security and ethical standards with a secure generative AI platform
-    
-        This not only saves time for enablement professionals but also ensures that sales teams have access to up-to-date, engaging, and tailored content that resonates with their target audience.
-        Discover data-driven insights faster
-    
-        Copilot gets you the answers you need to make data-based decisions, without reviewing lengthy calls or navigating dashboards and reporting pages.
-        AI call navigator
-    
-        Get quick insights into every call fast
-    
-        Copilot can analyze any call in seconds and answer top-of-mind questions without having to sift through a transcript. Sellers can get a quick call summary, craft detailed follow-ups, and receive self-coaching tips on how to improve future customer and prospect interactions. Managers can prioritize reps to coach by call scores and quickly review underperforming calls to foster detailed coaching sessions.""")
+                                       """Campaign Analyst' my short apps which helps creators create short and long social media posts alongiwith short audios and a custom qr code embedded in a beautiful image Currently it can generate content in some non-english languages like chinese, arabic and spanish we will support more in the future. In future we will add support for AI avatar videos and AI product placement generators""")
 
     if st.button("Generate Campaign Posts(Multilingual)"):
         with st.spinner(text="Using ClarifAI workflow to generate Multilingual Posts"):
