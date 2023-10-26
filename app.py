@@ -161,7 +161,7 @@ Copilot can analyze any call in seconds and answer top-of-mind questions without
                     except Exception as e:
                         truncated_base_english_text = base_english_text[0:500]
 
-                    st.session_state.base_spanish_post, st.session_state.base_spanish_audio = spanish_translate( input_text=truncated_base_english_text, clarif_ai_pat=CLARIFAI_PAT)
+                    st.session_state.base_spanish_post, st.session_state.base_spanish_audio = spanish_translate(input_text=truncated_base_english_text, clarif_ai_pat=CLARIFAI_PAT)
                 except TypeError as e:
                     st.write("Unable to generate")
                 except ValueError as e:
@@ -177,9 +177,11 @@ Copilot can analyze any call in seconds and answer top-of-mind questions without
                         truncated_base_english_text = limit_string_to_500_characters(input_text=base_english_text)
                     except Exception as e:
                         truncated_base_english_text = base_english_text[:500]
-                    st.session_state.base_chinese_post = chinese_translate(input_text=truncated_base_english_text,
+                    st.session_state.base_chinese_post, st.session_state.base_chinese_audio = chinese_translate(input_text=truncated_base_english_text,
                                                                            clarif_ai_pat=CLARIFAI_PAT)
                 except TypeError as e:
+                    st.write("Unable to generate")
+                except ValueError as e:
                     st.write("Unable to generate")
 
             st.success('Done!')
@@ -192,9 +194,11 @@ Copilot can analyze any call in seconds and answer top-of-mind questions without
                         truncated_base_english_text = limit_string_to_500_characters(input_text=base_english_text)
                     except Exception as e:
                         truncated_base_english_text = base_english_text[0:500]
-                    st.session_state.base_arabic_post = arabic_translate(input_text=truncated_base_english_text,
+                    st.session_state.base_arabic_post, st.session_state.base_arabic_audio = arabic_translate(input_text=truncated_base_english_text,
                                                                            clarif_ai_pat=CLARIFAI_PAT)
                 except TypeError as e:
+                    st.write("Unable to generate")
+                except ValueError as e:
                     st.write("Unable to generate")
 
             st.success('Done!')
@@ -266,6 +270,7 @@ with tab2:
                     st.session_state.bulk_english_post = sigma_output(input_text=user_product_input_bulk,
                                                                       clarif_ai_pat=CLARIFAI_PAT)
                 except Exception as e:
+                    print(f"{str(e)}")
                     st.write("Unable to Generate")
             else:
                 response = f"This description cannot be processed as it has been detected to be {reason}"

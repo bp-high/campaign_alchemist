@@ -47,8 +47,6 @@ def sigma_output(input_text: str, clarif_ai_pat):
         elif model.id == "gpt-3_5-turbo-instruct":
             arabic_translation = output.data.text.raw
 
-
-
         else:
             pass
 
