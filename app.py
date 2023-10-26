@@ -254,7 +254,7 @@ with tab2:
 
 with tab3:
     st.header("Generate Cool and Quirky QR codes embedded within Images")
-    input_content = st.text_input("Enter content you want to be embedded in the QR code", "https://aclanthology.org/2023.semeval-1.266/")
+    input_content = st.text_input("Enter content you want to be embedded in the QR code", "https://campaign-alchemist.streamlit.app/")
     prompt = st.text_input("Write text description of the image in which you want the Qr code to be embedded", "Natural ice cream flavours")
 
     if st.button("Submit"):
